@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For You, Baby</title>
+<style>
+body {
+  background: #f5f1ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Georgia", serif;
+}
+
+.envelope {
+  width: 320px;
+  height: 200px;
+  background: #e6dcd1;
+  position: relative;
+  cursor: pointer;
+  transition: 0.6s;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.envelope::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 160px solid transparent;
+  border-right: 160px solid transparent;
+  border-bottom: 100px solid #d8cfc4;
+}
+
+.letter {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  width: 290px;
+  height: 180px;
+  background: white;
+  padding: 20px;
+  overflow-y: auto;
+  opacity: 0;
+  transition: 0.6s;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.envelope.open .letter {
+  opacity: 1;
+  top: -230px;
+}
+
+h3 {
+  margin-top: 0;
+}
+</style>
+</head>
+<body>
+
+<div class="envelope" onclick="this.classList.toggle('open')">
+  <div class="letter">
+    <h3>My Dearest Baby,</h3>
+
+    <p>
+    They say love is supposed to be simple, clean, and easy to explain.
+    Ours never was—and yet it is the truest thing I’ve ever known.
+    </p>
+
+    <p>
+    I used to be afraid of being judged, afraid of what the world would say
+    about a girl loving another girl. But loving you, Baby, taught me that
+    fear loses its power when love is honest.
+    </p>
+
+    <p>
+    They can call it a mistake. They can call it a sin.
+    But when you hold my hand, when you look at me the way you do,
+    I feel more whole than I ever have.
+    </p>
+
+    <p>
+    I don’t love you quietly.
+    I love you boldly.
+    I love you in a way that chooses you,
+    even when the world doesn’t understand.
+    </p>
+
+    <p>
+    I am yours—in the easy days
+    and in the difficult ones too.
+    As long as I can feel warmth and light,
+    I will carry you with me.
+    </p>
+
+    <p>
+    I love you, Baby.
+    I will always make sure you know that.
+    </p>
+
+    <p><strong>Always, Yours ♡</strong></p>
+  </div>
+</div>
+
+</body>
+</html>
